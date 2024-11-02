@@ -50,7 +50,7 @@ export const experiencesData = [
   {
     title: "Full-Stack Developer",
     location: "Remote",
-    description: "I build a full-stack web app once per year as a way to learn new technologies and also for fun. My stack includes React, Next.js, TypeScript, Tailwind, Prisma, and PostgreSQL. I'm open to full-time opportunities. These project have included tvroulette.app & uwhmap.com.",
+    description: "I build a full-stack web app once per year as a way to learn new technologies and also for fun. My stack includes React, Next.js, TypeScript, Tailwind, Prisma, and PostgreSQL. These project have included tvroulette.app & uwhmap.com. I'm open to working on new full-stack opportunities.",
     icon: React.createElement(SiNextdotjs),
     date: "2023 - present",
   },
@@ -58,24 +58,21 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
-    description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+    title: "Underwater Hockey Map",
+    description: "I designed and developed this application. It uses the Google Maps API and Google Places API to view, create, or edit underwater hockey clubs around the world. It has features like login, user accounts, and CRUD functionality for users to dynamically manage the database and pages.",
+    tags: ["Next.js", "NextAuth", "Prisma", "PostgreSQL", "Vercel", "Google Maps API", "Google Places API", "Tailwind", "Shadcn", "React Query"],
     imageUrl: corpcommentImg,
   },
   {
-    title: "rmtDev",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+    title: "Netflix Roulette",
+    description: "I designed and developed this application. It uses the IMDB, TMDB, OMDB, and JustWatch APIs to search for movies and TV shows. It features an interactive UI with multiple animations to retain user attention and engagement. This website has over 1.3k active monthy users and ranks very high on Google for the search term 'Netflix Roulette'.",
+    tags: ["Gatsby.js", "GSAP", "Styled Components", "React Query", "Contentful CMS", "Netlify", "IMDB API", "TMDB API", "OMDB API", "JustWatch API"],
     imageUrl: rmtdevImg,
   },
   {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    title: "Particle",
+    description: "Im and the sole developer for the Particle website. I work with the marketing team to make sure they are able to interact with their customers through this website. We use both Contentful CMS and a headless WordPress to allow the marketing team to manage the content on the site.",
+    tags: ["Gatsby.js", "GraphQL", "Styled Components", "Redux", "Contentful CMS", "Headless WordPress", "Netlify", "Intersection Observer", "Segment", "Marketo API", "GreenHouse Job Board API" ],
     imageUrl: wordanalyticsImg,
   },
 ] as const;
@@ -91,10 +88,12 @@ export const skillsData = [
   "Node.js",
   "Tailwind",
   "Styled Components",
-  "Shadcn",
   "Prisma",
   "React Query",
   "GraphQL",
   "PostgreSQL",
   "Framer Motion",
+  "Google Analytics",
+  "Google Tag Manager",
+  "Google Search Console"
 ] as const;
