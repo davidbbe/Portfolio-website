@@ -1,7 +1,6 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
+import { FaReact, FaWordpressSimple, FaShopify } from "react-icons/fa";
+import { SiNextdotjs } from "react-icons/si";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
@@ -35,28 +34,25 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
-    description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    title: "Front-end Developer @ Maker Media",
+    location: "Sebastopol/San Francisco, CA",
+    description: "WordPress theme development and Shopify theme development for the following websites: makezine.com, makerfaire.com, makershed.com, make.co, and makercamp.com.",
+    icon: React.createElement(FaWordpressSimple),
+    date: "2013 - 2018",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    title: "Front-end Engineer @ Particle Inc.",
+    location: "San Francisco, CA",
+    description: "I work together with the marketing team to make sure all of their technicall needs are met. I work on the particle.io website in the Gatsby.js framework. I also work on store.particle.io with Shopify theme development and custom Shopify app development. I also work on spectra.particle.io, blog.particle.io, and changelog.particle.io building custom WordPress themes.",
+    icon: React.createElement(FaReact),
+    date: "2018 - present",
   },
   {
     title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+    location: "Remote",
+    description: "I build a full-stack web app once per year as a way to learn new technologies and also for fun. My stack includes React, Next.js, TypeScript, Tailwind, Prisma, and PostgreSQL. I'm open to full-time opportunities. These project have included tvroulette.app & uwhmap.com.",
+    icon: React.createElement(SiNextdotjs),
+    date: "2023 - present",
   },
 ] as const;
 
@@ -91,17 +87,14 @@ export const skillsData = [
   "TypeScript",
   "React",
   "Next.js",
+  "Gatsby.js",
   "Node.js",
-  "Git",
   "Tailwind",
+  "Styled Components",
+  "Shadcn",
   "Prisma",
-  "MongoDB",
-  "Redux",
+  "React Query",
   "GraphQL",
-  "Apollo",
-  "Express",
   "PostgreSQL",
-  "Python",
-  "Django",
   "Framer Motion",
 ] as const;
