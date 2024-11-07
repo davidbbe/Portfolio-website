@@ -6,7 +6,7 @@ This is a one page website for the my personal portfolio site at https://daveb.c
 
 1. `npm install`
 2. Add RESEND_API_KEY environment variable in .env.local
-3. In the send-email.ts action file, change the "to" email to your own email
+3. In the sendEmail.ts action file, change the "to" email to your own email
 4. `npm run dev`
 
 ## Built With
