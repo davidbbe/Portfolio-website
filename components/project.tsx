@@ -22,38 +22,40 @@ export default function Project({ title, url, description, tags, imageUrl }: Pro
       style={{ scale: scaleProgess, opacity: opacityProgess }}
       className="group mb-3 sm:mb-8 last:mb-0"
     >
-      <section className="bg-gray-100 max-w-4xl border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[24rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
-        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[60%] flex flex-col h-full sm:group-even:ml-[18rem]">
-          <h3 className="mb-1 text-2xl font-semibold">{title}</h3>
-          <p className="mb-2 text-sm leading-relaxed text-gray-900 dark:text-white/70">{url}</p>
-          <p className="mb-2 leading-relaxed text-gray-600 dark:text-white/70">{description}</p>
-          <ul className="flex flex-wrap mt-4 gap-1 sm:mt-auto">
-            {tags.map((tag, index) => (
-              <li
-                className="bg-black/[0.7] px-3 py-1 text-[0.7rem] tracking-wider text-white rounded-full dark:text-white/70"
-                key={index}
-              >
-                {tag}
-              </li>
-            ))}
-          </ul>
-        </div>
+      <section className="bg-gray-100 max-w-4xl border border-black/5 rounded-lg overflow-hidden relative hover:bg-gray-200 transition dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+        <a href={url} target='_blank' className="block">
+          <div className="pt-4 pb-7 px-6 sm:px-14 sm:pt-10 sm:max-w-[60%] flex flex-col h-full sm:group-even:ml-[40%]">
+            <h3 className="mb-1 text-2xl font-semibold">{title}</h3>
+            <p className="mb-2 text-sm leading-relaxed text-gray-900 dark:text-white/70">{url}</p>
+            <p className="mb-2 leading-relaxed text-gray-600 dark:text-white/70">{description}</p>
+            <ul className="flex flex-wrap mt-4 gap-1 sm:mt-auto">
+              {tags.map((tag, index) => (
+                <li
+                  className="bg-black/[0.7] px-3 py-1 text-[0.7rem] tracking-wider text-white rounded-full dark:text-white/70"
+                  key={index}
+                >
+                  {tag}
+                </li>
+              ))}
+            </ul>
+          </div>
 
-        <Image
-          src={imageUrl}
-          alt="Project I worked on"
-          quality={95}
-          className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
-          transition 
-          group-hover:scale-[1.04]
-          group-hover:-translate-x-3
-          group-hover:translate-y-3
-          group-hover:-rotate-2
-          group-even:group-hover:translate-x-3
-          group-even:group-hover:translate-y-3
-          group-even:group-hover:rotate-2
-          group-even:right-[initial] group-even:-left-40"
-        />
+          <Image
+            src={imageUrl}
+            alt={`Screenshot of ${title}`}
+            quality={95}
+            className="block mx-auto mb-[-20%] sm:mb-0 sm:mx-0 sm:absolute top-8 sm:-right-40 w-[90%] sm:w-[57%] rounded-t-lg shadow-2xl
+            transition 
+            group-hover:scale-[1.04]
+            group-hover:-translate-x-3
+            group-hover:translate-y-3
+            group-hover:-rotate-2
+            group-even:group-hover:translate-x-3
+            group-even:group-hover:translate-y-3
+            group-even:group-hover:rotate-2
+            group-even:right-[initial] group-even:-left-40"
+          />
+        </a>
       </section>
     </motion.div>
   );
