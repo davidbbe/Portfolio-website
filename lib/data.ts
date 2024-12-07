@@ -99,11 +99,12 @@ export const skillsData = [
   "Node.js",
   "Tailwind",
   "Styled Components",
+  "Shadcn/ui",
+  "Framer Motion",
   "Prisma",
   "React Query",
   "GraphQL",
   "PostgreSQL",
-  "Framer Motion",
   "Google Analytics",
   "Google Tag Manager",
   "Google Search Console"
